@@ -26,7 +26,7 @@ const ChineseZodiacHandler = {
     },
     async handle(handlerInput) {
 
-        const year = Alexa.getSlotValue(handlerInput.requestEnvelope, 'year');
+        const year = Number(Alexa.getSlotValue(handlerInput.requestEnvelope, 'year'));
         let speechText = "none";
         try {
             let data = await ddb.get({

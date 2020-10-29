@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "ChineseZodiac.js",
         "cursor": {
-          "lineNumber": 17,
-          "column": 48
+          "lineNumber": 29,
+          "column": 87
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -110,7 +110,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1603980717455
+    "lastSave": 1603980908095
   },
   "VCS_STATE": {
     "provider": "GitHub",
