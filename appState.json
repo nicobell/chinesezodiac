@@ -1,0 +1,121 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "988f7948-92d1-46d2-94ac-aaf25bd968d9": {
+        "id": "988f7948-92d1-46d2-94ac-aaf25bd968d9",
+        "parent": null,
+        "name": "ChineseZodiac.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ChineseZodiac.js",
+        "cursor": {
+          "lineNumber": 34,
+          "column": 23
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ChineseZodiac"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSKc3ece7db79364968a00c322c80f2ab41",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1603979679577
+      }
+    },
+    "openFiles": [
+      "988f7948-92d1-46d2-94ac-aaf25bd968d9"
+    ],
+    "currentFileId": "988f7948-92d1-46d2-94ac-aaf25bd968d9",
+    "resources": {
+      "alexaSKc3ece7db79364968a00c322c80f2ab41": {
+        "name": "alexaSKc3ece7db79364968a00c322c80f2ab41",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.c3ece7db-7936-4968-a00c-322c80f2ab41",
+          "applicationID": ""
+        }
+      },
+      "ddbChineseAnimal": {
+        "name": "ddbChineseAnimal",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:001122388545:table/ChineseAnimal",
+            "name": "ChineseAnimal",
+            "partitionKey": "BirthYear",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask-sdk": {
+          "name": "ask-sdk",
+          "language": "nodejs",
+          "version": "2.7.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.4.1",
+    "projectName": "ChineseZodiac",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "chinesezodiac",
+      "url": "https://github.com/nicobell/chinesezodiac"
+    }
+  }
+}
