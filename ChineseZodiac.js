@@ -48,7 +48,6 @@ const ChineseZodiacHandler = {
     }
 };
 
-
 const ErrorHandler = {
     canHandle(handlerInput) {
         return true;
@@ -64,7 +63,6 @@ const ErrorHandler = {
             .getResponse();
     }
 };
-
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
