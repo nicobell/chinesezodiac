@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "ChineseZodiac.js",
         "cursor": {
-          "lineNumber": 7,
-          "column": 29
+          "lineNumber": 72,
+          "column": 66
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1603979679577
+        "lastUpdated": 1603980280521
       }
     },
     "openFiles": [
@@ -69,7 +69,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [

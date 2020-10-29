@@ -26,8 +26,8 @@ const ChineseZodiacHandler = {
     },
     async handle(handlerInput) {
         
-        const year = Number(Alexa.getSlotValue(handlerInput.requestEnvelope, 'year'));
-        let speechText = 'none';
+        const year = Alexa.getSlotValue(handlerInput.requestEnvelope, 'year');
+        let speechText = "none";
         try {
             let data = await ddb.get({
                 TableName: "ChineseAnimal",
@@ -35,10 +35,10 @@ const ChineseZodiacHandler = {
                     BirthYear: year
                 }
             }).promise();
-            speechText = 'your animal is ' + data.Item.Animal + ' which is ' + data.Item.Personality;
+            speechText = "your animal is " + data.Item.Animal;
 
         } catch (err) {
-            speechText = 'I do not know the animal for the year ' + year;
+            speechText = "I do not know your animal";
         };
 
         return handlerInput.responseBuilder
@@ -56,7 +56,7 @@ const ErrorHandler = {
         console.log('Error handled: ' + JSON.stringify(error.message));
         // console.log('Original Request was:', JSON.stringify(handlerInput.requestEnvelope.request, null, 2));
 
-        const speechText = 'Sorry, your skill encountered an error';
+        const speechText = "Sorry, your skill encountered an error";
         return handlerInput.responseBuilder
             .speak(speechText)
             .withShouldEndSession(false)
@@ -69,7 +69,7 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = 'Welcome to chinese zodiac animal app';
+        const speechText = "Welcome to chinese zodiac animal app";
         return handlerInput.responseBuilder
             .speak(speechText)
             .withShouldEndSession(false)
