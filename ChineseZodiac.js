@@ -25,7 +25,7 @@ const ChineseZodiacHandler = {
             && handlerInput.requestEnvelope.request.intent.name === 'ChineseZodiac';
     },
     async handle(handlerInput) {
-        
+
         const year = Alexa.getSlotValue(handlerInput.requestEnvelope, 'year');
         let speechText = "none";
         try {
