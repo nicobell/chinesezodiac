@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "ChineseZodiac.js",
         "cursor": {
-          "lineNumber": 29,
-          "column": 87
+          "lineNumber": 34,
+          "column": 23
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1603980280521
+        "lastUpdated": 1603981529572
       }
     },
     "openFiles": [

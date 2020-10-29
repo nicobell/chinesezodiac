@@ -35,7 +35,7 @@ const ChineseZodiacHandler = {
                     BirthYear: year
                 }
             }).promise();
-            speechText = "your animal is " + data.Item.Animal;
+            speechText = "your animal is " + data.Item.Animal + " which is " + data.Item.Personality;
 
         } catch (err) {
             speechText = "I do not know your animal";
